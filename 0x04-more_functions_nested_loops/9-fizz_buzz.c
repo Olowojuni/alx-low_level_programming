@@ -1,4 +1,6 @@
 #include"main.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * main - print numbers 1 - 100 followed by a new line
@@ -8,8 +10,8 @@
  * each number and word to be separated by space
  *
  * Return: Always 0 (Success)
- *
  */
+
 int main(void)
 {
 	int num;
