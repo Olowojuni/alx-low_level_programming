@@ -7,19 +7,23 @@
  * @dest: string that will be appended
  * @scr: string to be concatenated upon
  *
- * Return: returns poiner to @dest
+ * Return: returns pointer to @dest
  */
 
 char *_strcat(char *dest, char *scr)
 {
 
-	int index = 0, dest_len = 0;
+	int i, c;
 
-	while (dest[index++])
-		dest_len++;
+	for (i = 0; dest[i] != '\0'; i++)
+		;
 
-	for (index = 0; scr[index]; index++)
-		dest[dest_len++] = src[index];
+	for (c = 0; src[c] != '\0'; c++)
+	{
+		dest[i] = src[c];
+		i++;
+	}
 
+	dest[i] = '\0';
 	return (dest);
 }
