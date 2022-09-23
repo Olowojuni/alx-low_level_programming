@@ -10,10 +10,8 @@ nclude "main.h"
 char *rot13(char *s)
 {
 	int i, j;
-	char a[] = "abcdefghijklmnopqrstuvwxyzABCD
-		EFGHIJKLMNOPQRSTUVWXYZ";
-	char b[] = "nopqrstuvwxyzabcdefghijklmNOPQ
-		RSTUVWXYZABCDEFGHIJKLM";
+	char a[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char b[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	for (i = 0; *(s + i); i++)
 	{
